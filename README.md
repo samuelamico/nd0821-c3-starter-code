@@ -1,5 +1,8 @@
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
+# Links
+https://github.com/samuelamico/nd0821-c3-starter-code
+
 # Environment Set up
 * Download and install conda if you don’t have it already.
     * Use the supplied requirements file to create a new environment, or
