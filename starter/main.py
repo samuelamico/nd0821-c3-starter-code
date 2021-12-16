@@ -35,11 +35,11 @@ class Input(BaseModel):
 class Output(BaseModel):
     prediction:str
 
-
-gb_model = pickle.load(open("./model/gbclassifier.pkl", "rb"))
-rf_model = pickle.load(open("./model/randomforest.pkl", "rb"))
-encoder = pickle.load(open("./model/encoder.pkl", "rb"))
-lb = pickle.load(open("./model/lb.pkl", "rb"))
+data_dir = os.getcwd()
+gb_model = pickle.load(open(f"{data_dir}/model/gbclassifier.pkl", "rb"))
+rf_model = pickle.load(open(f"{data_dir}/model/randomforest.pkl", "rb"))
+encoder = pickle.load(open(f"{data_dir}/model/encoder.pkl", "rb"))
+lb = pickle.load(open(f"{data_dir}/model/lb.pkl", "rb"))
 
 # Define a GET on the specified endpoint.
 @app.get("/")
