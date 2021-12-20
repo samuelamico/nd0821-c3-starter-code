@@ -1,2 +1,3 @@
 teste dvc
 pull dvc with dvc add
+git .ignore test.txt.dvc
