@@ -5,8 +5,8 @@ import pandas as pd
 import pytest
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
-from starter.starter.ml.data import process_data
-from starter.starter.ml.model import compute_model_metrics, inference, train_model
+from starter.ml.data import process_data
+from starter.ml.model import compute_model_metrics, inference, train_model
 
 
 @pytest.fixture(scope='session')
