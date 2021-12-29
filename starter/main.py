@@ -48,7 +48,7 @@ async def say_hello():
     return msg
 
 @app.post("/items/")
-async def inference(data: Input):
+async def inference_data(data: Input):
     cat_features = [
         "workclass",
         "education",
@@ -71,7 +71,7 @@ async def inference(data: Input):
                 encoder=encoder,
                 lb=lb)
 
-    prediction = inference(X)
+    prediction = inference(rf_model, X)
 
     if prediction[0] == 1:
         prediction = "Salary > 50k"
